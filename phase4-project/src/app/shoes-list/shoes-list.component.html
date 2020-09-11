@@ -1,0 +1,25 @@
+<div class="container table">
+    <h3>List Of Shoes</h3>
+    <table class="table table-light table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>Product Id</th>
+                <th>Brand</th>
+                <th>Color</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let shoes of shoesList">
+                <td>{{shoes.productId}}</td>
+                <td>{{shoes.brand}}</td>
+                <td>{{shoes.color}}</td>
+                <td>{{shoes.size}}</td>
+                <td>{{shoes.price}}</td>
+                <td><img alt="{{shoes.brand}}'s image" style="width: 200px; height: 200px;" [src]="shoes.avatar"/></td>
+              </tr>
+        </tbody>
+    </table>
+</div>

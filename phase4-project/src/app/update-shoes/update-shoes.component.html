@@ -1,0 +1,10 @@
+<div class="container">
+    <h3><u>Enter below Shoes details to Update to the DB</u></h3>
+    <input type="text" class="form-control" placeholder="Enter Product ID" [(ngModel)]='shoes.productId'>
+    <input type="text" class="form-control" placeholder="Enter Shoes Brand" [(ngModel)]='shoes.brand'>
+    <input type="text" class="form-control" placeholder="Enter Shoes Color" [(ngModel)]='shoes.color'>
+    <input type="text" class="form-control" placeholder="Enter Shoes Size" [(ngModel)]='shoes.size'>
+    <input type="text" class="form-control" placeholder="Enter Shoes Price" [(ngModel)]='shoes.price'>
+    <input type="url" class="form-control" placeholder="Enter Shoes Image" [(ngModel)]='shoes.avatar'>
+    <button class="btn btn-primary" type="button" (click)='updateShoes()'>Update Shoes</button>
+</div>

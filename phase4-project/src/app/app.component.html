@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to Shoes API with {{title}}</h1>
+  <hr class="my-4">
+</div>
+<div class="container">
+  <ul class="nav justify-content-center"> 
+    <li class="nav-item" ><a routerLink="/addShoes" class="nav-link">Add Shoes</a></li>
+    <li class="nav-item" ><a routerLink="/updateShoes" class="nav-link">Update Shoes</a></li>
+    <li class="nav-item" ><a  routerLink="/removeShoes" class="nav-link">Remove Shoes</a></li>
+    <li class="nav-item" ><a routerLink="/searchShoes" class="nav-link">Search Shoes</a></li>
+    <li class="nav-item" ><a routerLink="/shoesList" class="nav-link">View All Shoes</a></li>
+    
+  </ul>
+</div>
+<br><br>
+<div class="container">
+<router-outlet></router-outlet> <!--  display the output of appropriate link which is been clicked -->
+</div>
